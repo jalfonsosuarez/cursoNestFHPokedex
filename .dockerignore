@@ -1,0 +1,9 @@
+dist/
+node-modules/
+mongo/
+test/
+
+.git/
+
+.gitignore
+.env-template
