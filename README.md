@@ -17,11 +17,18 @@ npm i -g @nestjs/cli
 ````
 docker-compose up -d
 ````
-5. Levantar el API:
+5. Clonar el archvo __.env.template__ y renombrar a __.env__
+6. Valores para trabajar en desarrollo:
+````
+MONGODB=mongodb://localhost:27017/nest-pokemon
+PORT=3000
+DEFAULT_LIMIT=5
+````
+7. Levantar el API:
 ````
 yarn start:dev
 ````
-6. Reconstruir la base de datos:
+8. Reconstruir la base de datos:
 ````
 localhost:3000/api/v2/seed
 ````
