@@ -15,7 +15,7 @@ import { JoiValidationSchema } from './config/joi.validation';
       load: [EnvConfiguration],
       validationSchema: JoiValidationSchema,
     }),
-    MongooseModule.forRoot('mongodb://localhost:27017/nest-pokemon'),
+    MongooseModule.forRoot(process.env.MONGODB),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
     }),
